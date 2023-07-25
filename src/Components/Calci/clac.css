@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: [col]74px [col]74px [col]74px [col]74px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    width: 370px;
+    margin: auto;
+    border-radius: 2px;
+    background: #f2f2f2;
+    padding: 15px 15px 20px 20px;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 50%);
+}
+
+.screen {
+    grid-column: 1/5;
+}
+
+.equal {
+    grid-column: 1/5;
+    align-self: center;
+}
+
+.btn {
+    text-align: center;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    /* margin-top: 3px; */
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 5px;
+    background: whitesmoke;
+    text-align: right;
+    direction: ltr;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+}
+
+.plus {
+    background-color: #ffb84d;
+}
+
+.minus {
+    background-color: #ffcc80;
+}
+
+.mul {
+    background: #ffe0b3;
+}
+
+.div {
+    background: #fff5e6
+}

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2rem;
+    min-height: 20vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid saddlebrown; */
+}
+
+input {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.todo-button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    color: #ff6f47;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #ff6f47;
+    color: white;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    outline: none;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    padding: 1rem;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: -1px;
+    ;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+.lists {
+    min-width: 30%;
+    list-style: none;
+    /* border: 2px solid salmon; */
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.todo-value {
+    flex: 1;
+    padding: 0rem 0.5rem;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background: rgb(11, 212, 162);
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
